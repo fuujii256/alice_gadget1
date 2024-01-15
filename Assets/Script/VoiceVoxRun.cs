@@ -17,7 +17,7 @@ public class VoiceVoxRun : MonoBehaviour
 
     void Start()
     {
-        viewText = "先生、こんにちは！、アリスは今日も元気です！";
+        viewText = "先生！おはようございます！　今日もよろしくお願いします";
         StartCoroutine(SpeakTest(viewText));
         //テキストを表示
         alice_Text.GetComponent<Text>().text = viewText;
@@ -29,7 +29,7 @@ public class VoiceVoxRun : MonoBehaviour
         VoiceVoxApiClient client = new VoiceVoxApiClient();
 
         // テキストからAudioClipを生成（話者は「8:春日部つむぎ」）
-        yield return client.TextToAudioClip(58, text);
+        yield return client.TextToAudioClip(8, text);
 
         if (client.AudioClip != null)
         {

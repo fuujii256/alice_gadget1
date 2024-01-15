@@ -11,7 +11,7 @@ using UnityEngine.Networking;
 public class VoiceVoxApiClient
 {
     /// <summary> 基本 URL </summary>
-    private const string BASE = "https://425f-2400-4153-f0c4-f700-703c-a1a0-d384-592c.ngrok-free.app";     //　voicevoxのurlを指定する
+    private const string BASE = "https://dd69-2400-4153-f0c4-f700-f962-18ef-4254-c333.ngrok-free.app";     //　voicevoxのurlを指定する
     /// <summary> 音声クエリ取得 URL </summary>
     private const string AUDIO_QUERY_URL = BASE + "/audio_query";
     /// <summary> 音声合成 URL </summary>
